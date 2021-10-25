@@ -1,7 +1,7 @@
 
 import './App.css';
 import Sidebar from './Components/Sidebar';
-import Topbar from './Components/Topbar';
+
 import Content from './Components/Content';
 
 
@@ -14,9 +14,6 @@ function App() {
        
         <div id="wrapper">
           <Sidebar/>
-          <div  id="content-wrapper" class="d-flex flex-column">
-                <Topbar/>          
-          </div>
           <div class="container-fluid">
                 <Content/>      
           </div>
