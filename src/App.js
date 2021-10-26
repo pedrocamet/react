@@ -5,6 +5,7 @@ import Footer from './Components/Footer';
 import Content from './Components/Content';
 
 
+
  
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div id="wrapper">
         
           <div class="container-fluid">
+        
                 <Content/>    
                 <Footer/>  
           </div>
