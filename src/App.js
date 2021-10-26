@@ -1,7 +1,7 @@
 
 import './App.css';
-import Sidebar from './Components/Sidebar';
 
+import Footer from './Components/Footer';
 import Content from './Components/Content';
 
 
@@ -13,12 +13,17 @@ function App() {
         
        
         <div id="wrapper">
-          <Sidebar/>
-          <div class="container-fluid">
-                <Content/>      
-          </div>
-        </div>
         
+          <div class="container-fluid">
+                <Content/>    
+                <Footer/>  
+          </div>
+          
+          
+
+
+        </div>
+      
 
         <a
           className="App-link"
