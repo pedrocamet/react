@@ -1,5 +1,6 @@
 import React from 'react';
 import "./app5.css";
+import ValorTotal from './ValorTotal';
 
 function EtiquetaPrecio (){
   return (
@@ -7,8 +8,8 @@ function EtiquetaPrecio (){
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Amount in products</div>
-											<div className="h5 mb-0 font-weight-bold text-gray-800">$546.456</div>
+											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Valor total de los autos en alquiler</div>
+											<div className="h5 mb-0 font-weight-bold text-gray-800"> <ValorTotal /> </div>
 										</div>
 										<div className="col-auto">
 											<i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
