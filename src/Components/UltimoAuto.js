@@ -38,6 +38,7 @@ class UltimoAuto extends Component {
                         <p className="ultimo-auto-descripcion"> {valores.descripcion}</p>
                     <h4 className="ultimo-auto-titulo"> Foto </h4>
                         <p className="ultimo-auto-foto"> {valores.foto}</p>
+                        <img src={`http://www.localhost:3005/img/${valores.foto}`} alt= "foto"></img>
                 </div> 
                      
             )
