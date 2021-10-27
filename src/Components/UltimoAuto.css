@@ -1,0 +1,48 @@
+.ultimo-auto-marca{
+    align-items: center;
+    background-color: rgb(223, 222, 222);
+    flex:30%;
+    font-size:20px;
+}
+
+.ultimo-auto-modelo{
+    align-items: center;
+    background-color: rgb(223, 222, 222);
+    flex:30%;
+    font-size:20px;
+}
+
+.ultimo-auto-año{
+    align-items: center;
+    background-color: rgb(223, 222, 222);
+    flex:30%;
+    font-size:20px;
+}
+
+.ultimo-auto-precio{
+    align-items: center;
+    background-color: rgb(223, 222, 222);
+    flex:30%;
+    font-size:20px;
+}
+
+.ultimo-auto-descripcion{
+    align-items: center;
+    background-color: rgb(223, 222, 222);
+    flex:30%;
+    font-size:20px;
+}
+
+.ultimo-auto-foto{
+    align-items: center;
+    background-color: rgb(223, 222, 222);
+    flex:30%;
+    font-size:20px;
+}
+
+.ultimo-auto-titulo{
+    align-items: center;
+    background-color: grey;
+    font-size: 14px;
+    flex:30%;
+}
