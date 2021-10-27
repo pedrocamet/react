@@ -6,6 +6,7 @@ import EtiquetaPrecio from './EtiquetaPrecio';
 import EtiquetaUsers from './EtiquetaUsers';
 import EtCategoria from './EtCategoria';
 import MostrarProductos from './MostrarProductos';
+import UltimoAuto from './UltimoAuto';
 
 function Content (){
   return (
@@ -57,11 +58,24 @@ function Content (){
 									<h6 className="m-0 font-weight-bold text-primary"> Listado de productos </h6>
 								</div>
 								<div className="card-body-2">
-									<MostrarProductos className="mostrarProductos"/>
+									<MostrarProductos />
 									
 								</div>
 							</div>
 						</div>
+
+						<div className="col-lg-6 mb-4">
+							<div className="card shadow mb-4">
+								<div className="card-header py-3">
+									<h6 className="m-0 font-weight-bold text-primary"> Último auto registrado </h6>
+								</div>
+								<div className="card-body-2">
+									<UltimoAuto />
+									
+								</div>
+							</div>
+						</div>
+
 
 					
 						<div className="col-lg-6 mb-4">						

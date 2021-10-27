@@ -3,7 +3,6 @@ import './App.css';
 
 import Footer from './Components/Footer';
 import Content from './Components/Content';
-import MostrarProductos from './Components/MostrarProductos';
 
 
 
@@ -18,6 +17,7 @@ function App() {
         
           <div class="container-fluid">
 
+        
                 <Content/>    
                 <Footer/>  
           </div>
