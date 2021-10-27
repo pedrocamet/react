@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./MostrarProductos.css"
 
 class MostrarProductos extends Component {
 
@@ -24,7 +25,15 @@ class MostrarProductos extends Component {
            
 
             return (
-                <div> {valores.map(valor => <div> {valor.marca} {valor.modelo} {valor.año} { } ${valor.precio}  </div>)}</div> 
+                <div className="mostrar-producto-T"> {valores.map(valor => <div>
+                    <div className="mostrar-producto-global">
+                    <p className="detalle-mostrar-producto-marca">{valor.marca}</p>
+                    <p className="detalle-mostrar-producto-modelo">{valor.modelo}</p>
+                    <p className="detalle-mostrar-producto-año">{valor.año}</p> { } 
+                    <p className="detalle-mostrar-producto-precio">${valor.precio}</p>
+                    </div>
+                     
+                    </div>)}</div> 
                      
             )
             }
