@@ -5,6 +5,7 @@ import EtiquetaInicial from './EtiquetaInicial';
 import EtiquetaPrecio from './EtiquetaPrecio';
 import EtiquetaUsers from './EtiquetaUsers';
 import EtCategoria from './EtCategoria';
+import MostrarProductos from './MostrarProductos';
 
 function Content (){
   return (
@@ -46,7 +47,19 @@ function Content (){
 									</div>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
 									<a target="_blank" rel="nofollow" href="/">View product detail</a>
-								</div>F
+								</div>
+							</div>
+						</div>
+
+						<div className="col-lg-6 mb-4">
+							<div className="card shadow mb-4">
+								<div className="card-header py-3">
+									<h6 className="m-0 font-weight-bold text-primary"> Listado de productos </h6>
+								</div>
+								<div className="card-body-2">
+									<MostrarProductos className="mostrarProductos"/>
+									
+								</div>
 							</div>
 						</div>
 
