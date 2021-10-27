@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./UltimoAuto.css"
 
 class UltimoAuto extends Component {
 
@@ -24,13 +25,19 @@ class UltimoAuto extends Component {
            
 
             return (
-                <div> 
-                    <p> Marca: {valores.marca} </p>
-                    <p>Modelo: {valores.modelo}</p>
-                    <p>Año: {valores.año}</p>
-                    <p>Precio: {valores.precio}</p>
-                    <p>Descripción: {valores.descripcion}</p>
-                    <p>Foto: {valores.foto}</p>
+                <div className="ultimo-auto-global"> 
+                    <h4 className="ultimo-auto-titulo"> Marca </h4>
+                        <p className="ultimo-auto-marca"> {valores.marca} </p>
+                    <h4 className="ultimo-auto-titulo"> Modelo </h4>
+                        <p className="ultimo-auto-modelo"> {valores.modelo}</p>
+                    <h4 className="ultimo-auto-titulo"> Año </h4>
+                        <p className="ultimo-auto-año"> {valores.año}</p>
+                    <h4 className="ultimo-auto-titulo"> Precio </h4>
+                        <p className="ultimo-auto-precio"> ${valores.precioDia}</p>
+                    <h4 className="ultimo-auto-titulo"> Descripción </h4>
+                        <p className="ultimo-auto-descripcion"> {valores.descripcion}</p>
+                    <h4 className="ultimo-auto-titulo"> Foto </h4>
+                        <p className="ultimo-auto-foto"> {valores.foto}</p>
                 </div> 
                      
             )

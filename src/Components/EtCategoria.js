@@ -11,7 +11,7 @@ function EtCategoria (){
 											<div className="card bg-info text-white shadow">
 												<div className="card-body">
 												<UltimoCliente/>
-                        
+												
 
 												</div>
 											</div>
