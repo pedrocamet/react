@@ -1,59 +1,42 @@
 import React, {Component} from "react";
 
+
 class UltimoCliente extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            nombre: "",
-            apellido: "",
-            mail: "",
-            foto: ""
+            valores: []
         }
-    }
-    
-
-    apiCall (url, consecuencia){
-      fetch(url)
-          .then(response => response.json()) 
-          .then (data => consecuencia(data))
-          .catch (error => console.log(error))
     }
 
         componentDidMount(){
-            this.apiCall("http://localhost:3005/usuario/ultimo-cliente", this.datosCliente)
+            fetch("http://localhost:3005/usuario/ultimo-cliente")
+                .then(response => response.json())
+                .then(data => this.setState( {valores: data.data}))
+                .catch(error => console.log(error))
 
-                
-        }
-        datosCliente = (data) =>   {
-          this.setState(
-           { nombre: data.data.nombre,
-             apellido: data.data.apellido,
-             mail: data.data.mail, 
-             foto: data.data.foto        
-          }
-
-          )
-          console.log(data.data)
         }
         
+
         render(){
-            if(this.state.valor === ""){
-                <p> Cargando... </p>
-            } else {
-               <h1> this.state.valor </h1> 
-            }
+
+            const {valores} = this.state
+           
+
             return (
-              <div> 
-                <div>
-                <p> Nombre: {this.state.nombre} </p>
-                <p> Apellido: {this.state.apellido} </p> 
-                <p> Email: {this.state.mail} </p>  
-                <p> {this.state.foto} </p>  
-                </div>
-                
-                
-              </div>
+                <div className="ultimo-auto-global"> 
+                    <h4 className="ultimo-auto-titulo"> Nombre</h4>
+                        <p className="ultimo-auto-marca"> {valores.nombre} </p>
+                    <h4 className="ultimo-auto-titulo"> Apellido </h4>
+                        <p className="ultimo-auto-modelo"> {valores.apellido}</p>
+                    <h4 className="ultimo-auto-titulo">Email </h4>
+                        <p className="ultimo-auto-año"> {valores.mail}</p>
+                    <h4 className="ultimo-auto-titulo"> Foto </h4>
+                        <p className="ultimo-auto-foto"> {valores.foto}</p>
+                        <img src={`http://www.localhost:3005/img/perfil/${valores.foto}`} alt= "foto"></img>
+                </div> 
+                     
             )
             }
     }
