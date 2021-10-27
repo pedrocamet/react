@@ -59,12 +59,8 @@ function Content (){
 								<div className="card-body">
 									<div className="row">
 										
-										<EtCategoria/>
-										<EtCategoria/>
-										<EtCategoria/>
-										<EtCategoria/>
-										<EtCategoria/>
-										<EtCategoria/>
+										<EtCategoria/>								
+																				
 										
 									</div>
 								</div>

@@ -18,7 +18,7 @@ class ClientesTotales extends Component {
         }
 
         render(){
-            if(this.state.valor == ""){
+            if(this.state.valor === ""){
                 <p> Cargando... </p>
             } else {
                <h1> this.state.valor </h1> 
