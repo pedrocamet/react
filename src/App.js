@@ -16,6 +16,7 @@ function App() {
         <div id="wrapper">
         
           <div class="container-fluid">
+
         
                 <Content/>    
                 <Footer/>  
