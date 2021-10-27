@@ -27,13 +27,14 @@ class MostrarProductos extends Component {
             return (
                 <div className="mostrar-producto-T"> {valores.map(valor => <div>
                     <div className="mostrar-producto-global">
-                    <p className="detalle-mostrar-producto-marca">{valor.marca}</p>
-                    <p className="detalle-mostrar-producto-modelo">{valor.modelo}</p>
-                    <p className="detalle-mostrar-producto-año">{valor.año}</p> { } 
-                    <p className="detalle-mostrar-producto-precio">${valor.precio}</p>
+                        <p className="detalle-mostrar-producto-marca">{valor.marca}</p>
+                        <p className="detalle-mostrar-producto-modelo">{valor.modelo}</p>
+                        <p className="detalle-mostrar-producto-año">{valor.año}</p> { } 
+                        <p className="detalle-mostrar-producto-precio">${valor.precio}</p>
                     </div>
                      
-                    </div>)}</div> 
+                    </div>)}
+                </div> 
                      
             )
             }

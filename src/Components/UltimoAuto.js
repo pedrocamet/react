@@ -28,7 +28,7 @@ class UltimoAuto extends Component {
                     <p> Marca: {valores.marca} </p>
                     <p>Modelo: {valores.modelo}</p>
                     <p>Año: {valores.año}</p>
-                    <p>Precio: {valores.precio}</p>
+                    <p>Precio: {valores.precioDia}</p>
                     <p>Descripción: {valores.descripcion}</p>
                     <p>Foto: {valores.foto}</p>
                 </div> 
