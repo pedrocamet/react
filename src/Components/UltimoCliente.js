@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./UltimoCliente.css"
 
 
 class UltimoCliente extends Component {
@@ -25,16 +26,19 @@ class UltimoCliente extends Component {
            
 
             return (
-                <div className="ultimo-auto-global"> 
-                    <h4 className="ultimo-auto-titulo"> Nombre</h4>
-                        <p className="ultimo-auto-marca"> {valores.nombre} </p>
-                    <h4 className="ultimo-auto-titulo"> Apellido </h4>
-                        <p className="ultimo-auto-modelo"> {valores.apellido}</p>
-                    <h4 className="ultimo-auto-titulo">Email </h4>
-                        <p className="ultimo-auto-año"> {valores.mail}</p>
-                    <h4 className="ultimo-auto-titulo"> Foto </h4>
-                        <p className="ultimo-auto-foto"> {valores.foto}</p>
-                        <img src={`http://www.localhost:3005/img/perfil/${valores.foto}`} alt= "foto"></img>
+
+                <div className="ultimoClientef"> 
+                     <div className="datosUltimoCliente">
+                        <p className="ultimoClienteNombreDato"> {valores.nombre} </p>
+                    
+                        <p className="ultimoClienteApellidoDato"> {valores.apellido}</p>
+                    
+                        <p className="ultimoClienteMailDato"> {valores.mail}</p>
+                        
+                    </div>
+                    <div className="fotoUltimoClientef">
+                      <img src={`http://www.localhost:3005/img/perfil/${valores.foto}`} alt= "foto"></img>
+                    </div>
                 </div> 
                      
             )

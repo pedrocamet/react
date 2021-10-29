@@ -1,0 +1,42 @@
+.ultimoClientef{
+  display: flex ;
+  width: 100%;
+  
+}
+.datosUltimoCliente{
+  width: 50%;
+}
+
+
+.ultimoClienteNombreDato{
+  align-items: center;
+  background-color: rgb(223, 222, 222);
+  color: #282c34;  
+  font-size:20px;
+}
+
+.ultimoClienteApellidoDato{
+  align-items: center;
+  background-color: rgb(223, 222, 222);
+  color: #282c34;
+  font-size:20px;
+}
+
+.ultimoClienteMailDato{
+  align-items: center;
+  background-color: rgb(223, 222, 222);
+  color: #282c34;
+  font-size:20px;
+}
+
+.fotoUltimoClientef{
+  object-fit: contain;
+  width: 50%;
+ 
+}
+.fotoUltimoClientef img {
+  display: flex;
+  width: 100%;
+}
+
+
